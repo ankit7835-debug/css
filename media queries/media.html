@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container {
+            width: 45vw;
+            height: 90vh;
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 90px;
+            height: 90px;
+            background-color: coral;
+            margin: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                background-color: lightblue;
+            }
+
+            .box {
+                background-color: lightgreen;
+            }
+
+        }
+
+        @media(min-width: 900px) and (max-width: 1200px) {
+            .container {
+                background-color: black;
+                color: white;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box1</div>
+        <div class="box">box1</div>
+        <div class="box">box1</div>
+        <div class="box">box1</div>
+    </div>
+</body>
+
+</html>
